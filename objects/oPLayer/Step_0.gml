@@ -1,6 +1,6 @@
 // Read inputs
-key_left = keyboard_check(vk_left);
-key_right = keyboard_check(vk_right);
+key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
+key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 key_jump = keyboard_check(vk_space);
 
 //var keyword will define that move variable is onlt for that freame
@@ -41,6 +41,21 @@ if(place_meeting(x,y+vsp,oTile))
 }
 
 y = y + vsp
+
+//firing
+fire_delay = fire_delay - 1;
+if(mouse_check_button(mb_left) && fire_delay <= 0)
+{
+	fire_delay = 5;
+	with(instance_create_layer(x,y,"lBullet",oBullet))
+	{
+		speed = 10;
+		direction = point_direction(x,y,mouse_x,mouse_y) + random_range(-3,3);
+		image_angle = direction;
+		
+	}
+}
+
 
 //Animation
 
