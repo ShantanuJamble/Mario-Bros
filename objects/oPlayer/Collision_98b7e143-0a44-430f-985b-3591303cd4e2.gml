@@ -1,3 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-SlideTransition(TRANS_MODE.RESTART);
+
+hp--;
+if (hp <=0)
+	sprite_index = sPlayerD
+	//game_end()
+	//game_restart()

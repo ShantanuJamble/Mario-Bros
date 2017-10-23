@@ -2,7 +2,7 @@
     "id": "96d0bc59-1e49-464c-b785-77f42283a999",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oPLayer",
+    "name": "oPlayer",
     "eventList": [
         {
             "id": "cda9909e-02f9-45ee-aedf-144fd41551b0",
@@ -42,6 +42,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 82,
             "eventtype": 9,
+            "m_owner": "96d0bc59-1e49-464c-b785-77f42283a999"
+        },
+        {
+            "id": "98b7e143-0a44-430f-985b-3591303cd4e2",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "ab0d01fd-55f6-4a1a-8d55-d715a0174777",
+            "enumb": 0,
+            "eventtype": 4,
             "m_owner": "96d0bc59-1e49-464c-b785-77f42283a999"
         }
     ],

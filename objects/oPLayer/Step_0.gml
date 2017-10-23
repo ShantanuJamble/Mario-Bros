@@ -1,8 +1,14 @@
 // Read inputs
+if(hascontrol){
 key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 key_jump = keyboard_check(vk_space);
-
+}
+else{
+	key_left = 0;
+	key_right = 0;
+	key_jump = 0;
+}
 //var keyword will define that move variable is onlt for that freame
 var move = key_right - key_left
 vsp = vsp + grv;
@@ -46,7 +52,7 @@ y = y + vsp
 fire_delay = fire_delay - 1;
 if(mouse_check_button(mb_left) && fire_delay <= 0)
 {
-	fire_delay = 5;
+	fire_delay = 7;
 	with(instance_create_layer(x,y,"lBullet",oBullet))
 	{
 		speed = 10;
