@@ -48,6 +48,11 @@ if(place_meeting(x,y+vsp,oTile))
 
 y = y + vsp
 
+if(y > room_height)
+{
+	audio_pause_all();
+}
+
 //firing
 fire_delay = fire_delay - 1;
 if(mouse_check_button(mb_left) && fire_delay <= 0)
@@ -65,20 +70,25 @@ if(mouse_check_button(mb_left) && fire_delay <= 0)
 
 //Animation
 
-
-if (!place_meeting(x,y+1,oTile))
+if(hp<=0)
 {
-	sprite_index = sPlayerJ;
-	image_speed = 0;
-}
+	sprite_index = sPlayerD;
+}	
+else{
+	if (!place_meeting(x,y+1,oTile))
+	{
+		sprite_index = sPlayerJ;
+		image_speed = 0;
+	}
 
-else
-{
-	image_speed = 1;
-	if(hsp == 0)
-		sprite_index = sPlayer;
 	else
-		sprite_index = sPlayerR;
+	{
+		image_speed = 1;
+		if(hsp == 0)
+			sprite_index = sPlayer;
+		else
+			sprite_index = sPlayerR;
+	}
 }
 //chaning direction of movement 
 if (hsp != 0) image_xscale = sign(hsp);
