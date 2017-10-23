@@ -34,7 +34,7 @@
             "Key": "093dcd89-44ec-44e7-aa14-3222754af250",
             "Value": {
                 "id": "fa34bdd7-ad7a-4335-8072-432c4e605963",
-                "resourcePath": "sprites\\sprite6\\sprite6.yy",
+                "resourcePath": "sprites\\sGoombaW\\sGoombaW.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "7fe5a6a1-c062-4388-a69a-b77b474c11c2",
+            "Value": {
+                "id": "6c0fec0d-8d46-4978-8251-09a830cb2142",
+                "resourcePath": "sprites\\sGoombaWFlash\\sGoombaWFlash.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "843fd5fd-c237-4b83-bed0-a9866303f04f",
             "Value": {
                 "id": "52d0f2c8-c70b-46b4-8430-07091df272b5",
@@ -164,6 +172,14 @@
                 "id": "2b29778d-5184-4c3e-aa1b-4e34f8d9a302",
                 "resourcePath": "views\\a52bc3c3-44d2-4443-8349-b529beb4d54f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ab0d01fd-55f6-4a1a-8d55-d715a0174777",
+            "Value": {
+                "id": "9b8ca165-f0ae-4c80-9791-429d1250e257",
+                "resourcePath": "objects\\oGoomba\\oGoomba.yy",
+                "resourceType": "GMObject"
             }
         },
         {
